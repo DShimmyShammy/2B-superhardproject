@@ -1,3 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
-
+.play {
+	background-color: #0EFFE6;
+	height: 100px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 40%;
+    box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);;
+	border: 2px solid #333333;
+	border-color: #BFBFBF;
+}
