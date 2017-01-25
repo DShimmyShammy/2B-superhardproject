@@ -12,14 +12,15 @@
 	border: 2px solid #333333;
 	border-color: #BFBFBF;
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: Identifier;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
+@keyframes identifier {
+  0% { top: 100; left: 100; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
 
   to {
     margin-left: 0%;
