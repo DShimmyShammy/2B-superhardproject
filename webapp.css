@@ -1,3 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.button {
+	color:black;
+	background-color:#37DED4;
+	width:250px;
+	height:105px;
+	font-size:20px;
+	border: dotted;
+	left: 40%;
+	position:relative;
+}
+	
+	
+		
+	
