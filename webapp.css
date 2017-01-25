@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-.begin {
+.button {
 	background-color: #0EFFE6;
-	height: 100px;
+	height: 105px;
 	width: 250px;
 	border-radius: 10px;
 	position: relative;
@@ -11,4 +11,18 @@
     box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);;
 	border: 2px solid #333333;
 	border-color: #BFBFBF;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
