@@ -1,36 +1,61 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/* body style */
+.body	{
+
+}
+
+/* button style */
 .button {
+	background-color: #2BD9EA;
+	height: 105px;
+	width: 250px;
+	border-radius: 50px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 20px;
+	left: 40%;
+	box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);
+	border: 2px solid #333333;
+	border-color: #BFBFBF;
+	animation-name: pulse_animation;
+	animation-duration: 3000ms;
+	transform-origin: 70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.options_button {
 	background-color: #0EFFE6;
 	height: 105px;
 	width: 250px;
-	border-radius: 10px;
+	border-radius: 50px;
 	position: relative;
 	top: 80px;
 	left: 40%;
     box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);;
 	border: 2px solid #333333;
 	border-color: #BFBFBF;
-    animation-duration: 10s;
-    animation-name: Colorchange;
+	animation-name: pulse_animation;
+	animation-duration: 3000ms;
+	transform-origin:70% 70%;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
-<<<<<<< HEAD
-.button {
-	color:black;
-	background-color:#37DED4;
-	width:250px;
-	height:105px;
-	font-size:20px;
-	border: dotted;
-	left: 40%;
-	position:relative;
-}
-	
-=======
-/*Responsive(MEDIA QUERIES)*/
+/* animating play and option buttons */
 
-@media center and (max-width: 980px) {
-	
->>>>>>> master
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	10% { transform: scale(1.1); left: 41%; }
+	20% { transform: scale(1.2); left: 41%;}
+	30% { transform: scale(1.3); left: 42%;}
+	40% { transform: scale(1.4); left: 42%;}
+	50% { transform: scale(1.5); left: 43%;}
+	60% { transform: scale(1.4); left: 43%;}
+	70% { transform: scale(1.3); left: 42%;}
+	80% { transform: scale(1.2); left: 42%;}
+	90% { transform: scale(1.1); left: 41%;}
+	100% { transform: scale(1);  left: 41%;}
+}
