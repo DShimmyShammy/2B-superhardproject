@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 .button {
-	background-color: #0EFFE6;
+	background-color: red;
 	height: 105px;
 	width: 250px;
 	border-radius: 10px;
@@ -16,21 +16,3 @@
 	animation-iteration-count: infinite;
 }
 
-<<<<<<< HEAD
-.button {
-	color:black;
-	background-color:#37DED4;
-	width:250px;
-	height:105px;
-	font-size:20px;
-	border: dotted;
-	left: 40%;
-	position:relative;
-}
-	
-=======
-/*Responsive(MEDIA QUERIES)*/
-
-@media center and (max-width: 980px) {
-	
->>>>>>> master
