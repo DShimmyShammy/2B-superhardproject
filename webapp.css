@@ -1,3 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Responsive(MEDIA QUERIES)*/
+
+@media center and (max-width: 980px) {
+	
