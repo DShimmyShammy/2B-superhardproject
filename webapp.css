@@ -15,16 +15,21 @@
     animation-name: Colorchange;
 	animation-iteration-count: infinite;
 }
-	background-color:#37DED4;
-	width:250px;
-	height:105px;
-	font-size:20px;
-	border: dotted;
-	left: 40%;
-	position:relative;
-}
 
-/*Responsive(MEDIA QUERIES)*/
+/* animating play and option buttons */
 
-@media center and (max-width: 980px) {
+@keyframes Colorchange {
+	0%   { background-color:#0EFFE6; width: 250px; height: 105px; top: 80px; left: 40%;}
+    1%  { background-color:#EAFA05; width: 270px; height: 125px; top: 79px; left: 39%;}
+    2%  { background-color:#2B42EC; width: 290px; height: 145px; top: 78px; left: 38%;}
+    3%  { background-color:#33FC53;width: 310 px; height: 165px; top: 77px; left: 37%}
+    4% { background-color:#29CAEF; width: 290px; height: 145px; top: 78px; left: 38%}
+	5%  { background-color:#6E0AFF; width: 270px; height: 125px; top: 79px; left: 39%}
+	6% {background-color:#0EFFE6; width: 250px; height: 105px; top: 80px; left: 40%}
+	7%  { background-color:#EAFA05; width: 270px; height: 125px; top: 79px; left: 39%;}
+    8%  { background-color:#2B42EC; width: 290px; height: 145px; top: 78px; left: 38%;}
+    9%  { background-color:#33FC53;width: 310 px; height: 165px; top: 77px; left: 37%}
+	10% { background-color:
 	
+} 
+
