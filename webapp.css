@@ -16,13 +16,13 @@
 	border-bottom-width: thick;
 	margin-top: 50px;
 	top: 20px;
-	left: 44%;
+	left: 45.1%;
 	box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);
 	border: 2px solid #333333;
 	border-color: #BFBFBF;
 }
 
-.animation {
+#animation:hover {
 	animation-name: pulse_animation;
 	animation-duration: 2s;
 	transform-origin: 70% 70%;
@@ -33,7 +33,7 @@
 /* animating play and option buttons */
 
 @keyframes pulse_animation {
-0% { transform: scale(1.1); left: 44.01}
-50% { transform: scale(1.25); left: 44.3%; background-color:#0700FF}
-100% { transform: scale(1.1); left: 44.01%; background-color:#06FFF8}
+0% { transform: scale(1.1); left: 45.01%; background-color: #0035FF}
+50% { transform: scale(1.25); left: 45.8%; background-color:#06FFF8}
+100% { transform: scale(1.1); left: 45.01%; background-color:#0035FF}
 }
