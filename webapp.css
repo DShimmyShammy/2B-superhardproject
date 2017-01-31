@@ -20,6 +20,9 @@
 	box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);
 	border: 2px solid #333333;
 	border-color: #BFBFBF;
+}
+
+.animation {
 	animation-name: pulse_animation;
 	animation-duration: 2s;
 	transform-origin: 70% 70%;
