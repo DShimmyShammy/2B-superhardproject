@@ -33,7 +33,11 @@
 /* animating play and option buttons */
 
 @keyframes pulse_animation {
-0% { transform: scale(1.1); left: 45.01%; background-color: #0035FF}
-50% { transform: scale(1.25); left: 45.8%; background-color:#06FFF8}
-100% { transform: scale(1.1); left: 45.01%; background-color:#0035FF}
+0% { transform: scale(1.1); left: 45.06%; background-color: #0035FF}
+17% { transform: scale(1.15); left: 45.14%; background-color:#2F5BDC}
+34% { transform: scale(1.2); left: 45.22%; background-color:#4588D8}
+50% { transform: scale(1.25); left: 45.3%; background-color:#06FFF8}
+72% { transform: scale(1.2); left: 45.22%; background-color: #4588D8}
+86% { transform: scale(1.15); left: 45.14%; background-color: #2F5BDC}
+100% { transform: scale(1.1); left: 45.06%; background-color:#0035FF}
 }
