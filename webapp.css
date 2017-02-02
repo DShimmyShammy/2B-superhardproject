@@ -12,7 +12,8 @@
 	left: 45%;
 	top: 20px;
 	border-color: #BFBFBF;
-	box-shadow: hsla(358,25%,26%,1.00);
+	box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);
+	border: 1px solid #333333;
 }
 
 
@@ -25,7 +26,7 @@
 }
 @keyframes pulse_animation {
 0% { transform: scale(1.1); left: 45.01%; background-color: #0035FF}
-50% { transform: scale(1.25); left: 45.8%; background-color:#06FFF8}
+50% { transform: scale(1.25); left: 45.5%; background-color:#06FFF8}
 100% { transform: scale(1.1); left: 45.01%; background-color:#0035FF}
 
 
