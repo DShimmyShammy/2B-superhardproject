@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* button style */
+
 .button {
 	background-color: #2BD9EA;
 	height: 105px;
@@ -17,6 +19,8 @@
 }
 
 
+/* button animation */
+
 #animation:hover {
 	animation-name: pulse_animation;
 	animation-duration: 2s;
@@ -24,7 +28,15 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+
 @keyframes pulse_animation {
 0% { transform: scale(1.1); left: 45.01%; background-color: #0035FF}
 50% { transform: scale(1.25); left: 45.5%; background-color:#06FFF8}
 100% { transform: scale(1.1); left: 45.01%; background-color:#0035FF}
+
+/* background image */
+
+.background		{
+	background-image:url(images/512x512bb.jpg);
+	margin-top: 100px;
+}
