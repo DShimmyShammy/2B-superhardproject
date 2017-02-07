@@ -36,3 +36,14 @@ body	{
 0% { transform: scale(1.1); left: 44.01%; background-color: #0035FF}
 50% { transform: scale(1.25); left: 44.5%; background-color:#06FFF8}
 100% { transform: scale(1.1); left: 44.01%; background-color:#0035FF}
+
+}
+
+
+#header h1 {
+	position: relative;
+	text-align: center;
+	font-size:36px;
+	width: 101%;
+	font-style:oblique;
+}
