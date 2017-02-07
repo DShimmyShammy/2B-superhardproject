@@ -16,7 +16,7 @@
 	animation-iteration-count: infinite;
 }
 
-<<<<<<< HEAD
+
 .button {
 	color:black;
 	background-color:#37DED4;
@@ -28,9 +28,9 @@
 	position:relative;
 }
 	
-=======
+
 /*Responsive(MEDIA QUERIES)*/
 
 @media center and (max-width: 980px) {
 	
->>>>>>> master
+
