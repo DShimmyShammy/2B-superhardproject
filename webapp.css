@@ -3,13 +3,20 @@
 /* CSS Document */
 
 /* body style */
+<<<<<<< HEAD
 
 body 	{
 	background-color: red;
 }
 
 /* button style */
+=======
+body	{
+	background-color: red;
+}
+>>>>>>> HTML
 
+/* button style */
 .button {
 	background-color: #2BD9EA;
 	height: 105px;
@@ -18,6 +25,37 @@ body 	{
 	position: relative;
 	border-bottom-width: thick;
 	margin-top: 50px;
+<<<<<<< HEAD
+=======
+	top: 20px;
+	left: 40%;
+	box-shadow: #9B9B9B 50px 10px 100px rgba(250, 250, 250, .7);
+	border: 2px solid #333333;
+	border-color: #BFBFBF;
+	animation-name: pulse_animation;
+	animation-duration: 2s;
+	transform-origin: 70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* animating play and option buttons */
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	10% { transform: scale(1.05); left: 40%; background-color:#34CDC9}
+	20% { transform: scale(1.1); left: 40%; background-color: #0FA485}
+	30% { transform: scale(1.15); left: 40%; background-color:#13ED25}
+	40% { transform: scale(1.2); left: 40%; background-color: #B9FF00}
+	50% { transform: scale(1.25); left: 40%; background-color:#DDFF00}
+	60% { transform: scale(1.2); left: 40%; background-color:#86E800}
+	70% { transform: scale(1.15); left: 40%; background-color: #00FF44}
+	80% { transform: scale(1.1); left: 40%; background-color:#21D08F}
+	90% { transform: scale(1.05); left: 40%; background-color:#00FF82}
+	100% { transform: scale(1);  left: 40%; background-color: #02FC90}
+}
+	left: 45%;
+>>>>>>> HTML
 	top: 20px;
 	left: 44%;
 	border-color: #BFBFBF;
@@ -35,5 +73,21 @@ body 	{
 }
 @keyframes pulse_animation {
 0% { transform: scale(1.1); left: 44.01%; background-color: #0035FF}
+<<<<<<< HEAD
 50% { transform: scale(1.25); left: 44.4%; background-color:#06FFF8}
 100% { transform: scale(1.1); left: 44.01%; background-color:#0035FF}
+=======
+50% { transform: scale(1.25); left: 44.5%; background-color:#06FFF8}
+100% { transform: scale(1.1); left: 44.01%; background-color:#0035FF}
+
+}
+
+
+#header h1 {
+	position: relative;
+	text-align: center;
+	font-size:36px;
+	width: 101%;
+	font-style:oblique;
+}
+>>>>>>> HTML
