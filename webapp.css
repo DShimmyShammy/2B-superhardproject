@@ -1,36 +1,176 @@
 @charset "UTF-8";
-
 /* CSS Document */
-/* Body Styles */
-.box	{
-	background-color: #3384D0;
-	height: 5000px;
+
+/* body style */
+
+body {
+	background-color:rgb(204, 16, 190);
 }
 
-.score {
-	position:relative;
-	top: 20px;
-    left: 250px;
-    right: 1px;
-    bottom: 75px;
-	height:60px;
-	background-color:#3384D0;
-	border-color: black;
-	font-size: 18px;
-	width: 238px;
-	
+/* text style */
+
+#text	{
+	position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: chartreuse;
 }
 
-.memes {
-	color: red;
-	background-color: green;
-	width: 238px;
-	height: 50px;
-	position:relative;
-	top: 139px;
-	left: 498px;
-	
-	
-	
-	
+/* button style */
+
+.button {
+	background-color: #2BD9EA;
+	height: 105px;
+	width: 250px;
+	border-radius: 50px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	left: 23%;
+	top: 120px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+
+/* button animation */
+
+#animation:hover {
+	animation-name: pulse_animation;
+	animation-duration: 2s;
+	transform-origin: 70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+0% { transform: scale(1.1); left: 23.1%; background-color: #0035FF}
+50% { transform: scale(1.25); left: 23.35%; background-color:#06FFF8}
+100% { transform: scale(1.1); left: 23.1%; background-color:#0035FF}
+}
+
+@media screen and (min-width: 550px) {
+	.button	{
+		left: 32%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 32.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 32.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 32.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 720px) {
+	.button	{
+		left: 33%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 33.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 33.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 33.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 880px) {
+	.button	{
+		left: 35%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 35.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 35.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 35.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1000px) {
+	.button	{
+		left: 37%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 37.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 37.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 37.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1100px) {
+	.button	{
+		left: 39%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 39.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 39.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 39.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.button	{
+		left: 40%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 40.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 40.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 40.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1300px) {
+	.button	{
+		left: 41%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 41.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 41.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 41.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1500px) {
+	.button	{
+		left: 42%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 42.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 42.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 42.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1700px) {
+	.button	{
+		left: 43%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 43.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 43.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 43.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2000px) {
+	.button	{
+		left: 43.5%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 43.7%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 43.85%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 43.6%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2200px) {
+	.button	{
+		left: 44%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 44.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 44.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 44.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2400px) {
+	.button	{
+		left: 45%;
+	}
+	@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 45.2%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 45.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 45.1%; background-color:#0035FF}
+	}
 }
