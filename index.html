@@ -11,33 +11,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-
-<div class="box">
-<div class="keys">
-		<div class="try">
-		<div class="score">
-		<input type="display" value="score:" class="score" readonly size="18">
+	<script type="text/javascript">	
+		function clearStartPage() {
+			 document.body.innerHTML = '';
+		}
+	</script>
+	
+	<div id="text">
+			<h1>Color Clicker</h1>
+	</div>
 		
-		</div>
-		<div>
-			<input type="button" value="TRY AGAIN" class="try again button">
-			
-		</div>
-		<div>
-		
-		<input type="button" value="BACK TO HOME SCREEN" class="memes">
-
-  
-<div id="header">
-	<h1>Color Clicker</h1>
-</div>	
 	<p>
- <p>
-		<input type="button" value="Play" class="start button" id="animation">
+		<input type="button" value="Play" class="start button" onClick="clearStartPage();" id="animation">
 	</p>
 	<p>
-		<input type="button" value="Options" class="start button" id="animation">
-	</p>		
+		<input type="button" value="Options" class="start button" onClick="clearStartPage();"  id="animation">
+	</p>
+		
+	<p>
+		<span id="timer">
+		</span>
+		<span id="score">
+		</span>
+	</p>
 </body>
-</html> 
+</html>
 

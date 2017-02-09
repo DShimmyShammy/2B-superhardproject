@@ -1,1 +1,1 @@
-// JavaScript Document
+// Declaring Global Variables
