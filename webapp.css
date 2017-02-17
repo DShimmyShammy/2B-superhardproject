@@ -1,5 +1,183 @@
-@charset "UTF-8";
-/* CSS Document */
+@charset "UTF-8"
+
+#hidden	{
+	position: absolute;
+	height: 305px;
+	width: auto;	
+}
+#button1, #button2, #button3  {
+	position: absolute;
+	height: 305px;
+	width: auto;
+}
+#container	{
+	display: none;
+	margin: auto;
+    width: 50%;
+}
+
+#btn1 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 120px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn2 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 120px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+.btn3 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 120px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn4 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 430px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn5 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 430px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn6 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 430px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn7 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 740px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn8 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 740px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+#btn9 {
+	display: inline-block;
+	height: 305px;
+	width: 305px;
+	border-radius: 1px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	top: 740px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+	
+
+@media screen and (min-width: 1200px) and (max-width: 1300px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 68%;
+	}
+}
+@media screen and (min-width: 1301px) and (max-width: 1400px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 65%;
+	}
+}@media screen and (min-width: 1401px) and (max-width: 1600px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 60%;
+	}
+}@media screen and (min-width: 1601px) and (max-width: 1700px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 55%;
+	}
+}
+@media screen and (min-width: 1701px) and (max-width: 1900px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 50%;
+	}
+}
+@media screen and (min-width: 1901px) and (max-width: 2100px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 40%;
+	}
+}
+@media screen and (min-width: 2101px)	{
+	#container	{
+		margin: 20px auto;
+    	width: 35%;
+	}
+}
+	
 
 /* body style */
 
@@ -41,6 +219,13 @@ body {
 /* button animation */
 
 #animation:hover {
+	animation-name: pulse_animation;
+	animation-duration: 2s;
+	transform-origin: 70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#animation2:hover {
 	animation-name: pulse_animation;
 	animation-duration: 2s;
 	transform-origin: 70% 70%;
@@ -174,3 +359,4 @@ body {
 	100% { transform: scale(1.1); left: 45.1%; background-color:#0035FF}
 	}
 }
+
