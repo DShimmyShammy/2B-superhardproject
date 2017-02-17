@@ -148,12 +148,15 @@
 		margin: 20px auto;
     	width: 65%;
 	}
-}@media screen and (min-width: 1401px) and (max-width: 1600px)	{
+}
+@media screen and (min-width: 1401px) and (max-width: 1600px)	{
 	#container	{
 		margin: 20px auto;
     	width: 60%;
 	}
-}@media screen and (min-width: 1601px) and (max-width: 1700px)	{
+	
+}
+@media screen and (min-width: 1601px) and (max-width: 1700px)	{
 	#container	{
 		margin: 20px auto;
     	width: 55%;
@@ -177,7 +180,6 @@
     	width: 35%;
 	}
 }
-	
 
 /* body style */
 
@@ -232,6 +234,7 @@ body {
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+
 
 @keyframes pulse_animation {
 0% { transform: scale(1.1); left: 23.1%; background-color: #0035FF}
@@ -358,6 +361,7 @@ body {
 	50% { transform: scale(1.25); left: 45.35%; background-color:#06FFF8}
 	100% { transform: scale(1.1); left: 45.1%; background-color:#0035FF}
 	}
+<<<<<<< HEAD
 }
 
 .gameboard {
@@ -419,3 +423,6 @@ body {
     float: left;
 	margin: 0px auto;
 }
+=======
+}
+>>>>>>> origin/Version-1.0
