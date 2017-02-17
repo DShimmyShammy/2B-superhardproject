@@ -23,7 +23,13 @@ function beginGame()	{
 	document.getElementById('button1').style.backgroundColor = getRndColor();
 	document.getElementById('button2').style.backgroundColor = getRndColor();
     document.getElementById('button3').style.backgroundColor = getRndColor();
+	document.getElementById('wrapper').style.display = "block";
 }
+function thingy() {
+	alert("You issssssssss the champion!!");
+}
+
+/*
 function appendChild()	{
 	var btn1 = document.createElement('button');
 	var btn2 = document.createElement('button');
@@ -44,6 +50,16 @@ function appendChild()	{
 	btn8.setAttribute("id", "btn8");
 	btn9.setAttribute("id", "btn9");
 }
+document.getElementById('container').style.display = "block";
+	document.getElementById('button1').appendChild(btn1);
+	document.getElementById('button1').appendChild(btn2);
+	document.getElementById('button1').appendChild(btn3);
+	document.getElementById('button2').appendChild(btn4);
+	document.getElementById('button2').appendChild(btn5);
+	document.getElementById('button2').appendChild(btn6);
+	document.getElementById('button3').appendChild(btn7);
+	document.getElementById('button3').appendChild(btn8);
+	document.getElementById('button3').appendChild(btn9);
 
 
 /*

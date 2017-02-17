@@ -360,3 +360,62 @@ body {
 	}
 }
 
+.gameboard {
+    width: 400px;
+    height:600px;
+    border:3px solid white;
+    z-index: 1;
+
+}
+
+#wrapper {
+	display: none;
+    width: 400px;
+	height: 1000px;
+    margin: auto;
+}
+/* cell style */
+
+#cell1, #cell3, #cell4 {
+    width:100px;
+    height:100px;
+    border:3px solid black;
+    float: left;
+	background-color:#0028A1; 
+    margin:0 auto;
+}
+
+#cell5,#cell6,#cell7, #cell8 {
+    width:100px;
+    height:100px;
+    float: left;
+    border:3px solid black;
+	background-color:#0028A1;
+   margin:0 auto;   
+}
+
+#cell9,#cell10, #cell11, #cell12  {
+    width:100px;
+    height:100px;
+    float: left;
+    border:3px solid black;
+	background-color:#0028A1;
+    margin:0 auto;
+}
+
+#cell13, #cell14, #cell15, #cell16 {
+	width:100px;
+    height:100px;
+	float: left;
+    border:3px solid black;
+	background-color:#0028A1;
+    margin:0px auto;
+}
+#cell2 {
+	background-color:#1149C6;
+	width:100px;
+    height:100px;
+    border:3px solid black;
+    float: left;
+	margin: 0px auto;
+}
