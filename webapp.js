@@ -10,14 +10,14 @@ var array=0;
 	function getRndColor(min, max) {
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
-	
+	var Random = Math.random()*20;
 	var r = getRndColor(0, 255);
     var g = getRndColor(0, 255);
    	var b = getRndColor(0, 255);
 	var p = "rgb(" + r + "," + g + "," + b + ")";
-	var q = "rgb(" + r + "," + (g+50) + "," + b + ")";
+	var q = "rgb(" + (r+10) + "," + (g+10) + "," + (b-10) + ")";
 	
-// ASSIGN A RANDOM COLOR POSITION //
+// ASSIGN A RANDOM COLOR //
 
 function assignRndPos()	{
 		var rnd = Math.random()*256;
@@ -336,7 +336,7 @@ function beginGame()	{
 	document.getElementById('text').style.visibility = "hidden";
 	document.getElementById('wrapper').style.display = "block";
 	
-	// ASSIGN A RANDOM COLOR //
+	// ASSIGN A RANDOM COLOR POSITION //
 	
 	assignRndPos();
 }
