@@ -11,11 +11,49 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-  <p>
-		<input type="button" value="Play" class="start button" id="animation">
+	<div id="text">
+			<h1>Color Clicker</h1>
+	</div>
+		
+	<p>
+		<input type="button" value="Play" class="start button" onclick="beginGame();" id="animation">
 	</p>
 	<p>
-		<input type="button" value="Options" class="start button" id="animation">
-	</p>		
+		<input type="button" value="Options" class="start button" onclick="beginGame();" id="animation2">
+	</p>
+	
+<!-- CELL STRUCTURE -->
+	
+	<div id="wrapper">
+		<div id="gameboard">
+			<div id="Row1">
+                <button id="cell1"></button>
+                <button id="cell2"></button>
+				<button id="cell3" ></button>
+				<button id="cell4"></button>
+            </div>
+
+            <div class="Row2">
+                <button id="cell5"></button>
+                <button id="cell6"></button>
+                <button id="cell7"></button>
+				<button id="cell8"></button>
+            </div>
+
+            <div class="Row3">
+                <button id="cell9"></button>
+                <button id="cell10"></button>
+                <button id="cell11"></button>
+				<button id="cell12"></button>
+            </div>
+			
+			<div class="Row4">
+				<button id="cell13"></button>
+				<button id="cell14"></button>
+				<button id="cell15"></button>
+				<button id="cell16"></button>	
+			</div>
+		</div>
+	</div>
 </body>
 </html>
