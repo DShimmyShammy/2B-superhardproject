@@ -188,12 +188,12 @@ body {
 	}
 }
 
-/* CELL STYLE */
+/* 4X4 CELL STYLE */
 
-#wrapper {
+#four {
 	display: none;
     width: 400px;
-	height: 1000px;
+	height: 600px;
     margin: auto;
 }
 
@@ -202,12 +202,26 @@ body {
     height:600px;
 }
 
-/* cell style */
-
 #cell1,#cell2,#cell3,#cell4,#cell5,#cell6,#cell7,#cell8, #cell9, #cell10, #cell11, #cell12, #cell13, #cell14, #cell15, #cell16 {
     width:100px;
     height:100px;
 	float: left;
     border:3px solid black;
     margin:0 auto;
+}
+
+/* 5X5 CELL STYLE */
+
+#five		{
+	display: none;
+    width: 550px;
+	height: 700px;
+    margin: auto;
+}
+
+.cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .cell9, .cell10 {
+  width:100px;
+  height:100px;
+  background-color:red;
+  border:solid;
 }
