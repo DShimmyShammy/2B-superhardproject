@@ -17,13 +17,37 @@ var array=0;
 	var p = "rgb(" + r + "," + g + "," + b + ")";
 	var q = "rgb(" + (r+10) + "," + (g+10) + "," + (b-10) + ")";
 	
-// ASSIGN A RANDOM COLOR //
+// ASSIGN RANDOM COLORS AND RANDOM POSITIONS //
 
-function assignRndPos()	{
-		var rnd = Math.random()*256;
-		if	(rnd<16)	{
+function assignRndPosFour()	{
+	var rndFour = Math.random()*256;
+	var rnd = Math.ceil(Math.random() * 16);
+	for( var i = 1; i <= 16; i++ ) {
+		if(i==rnd) {
+			document.getElementById('cell4.' + i).style.backgroundColor = q;
+			document.getElementById('cell4.' + i).addEventListener("click", changeToFive, true);
+			document.getElementById('cell4.' + i).style.height = "100px";
+			document.getElementById('cell4.' + i).style.width = "100px";
+			document.getElementById('cell4.' + i).style.cssFloat = "left";
+			document.getElementById('cell4.' + i).style.border = "3px solid black";
+			document.getElementById('cell4.' + i).style.margin = "0px auto";
+		}
+		else	{
+			document.getElementById('cell4.' + i).style.backgroundColor = p;
+			document.getElementById('cell4.' + i).style.height = "100px";
+			document.getElementById('cell4.' + i).style.width = "100px";
+			document.getElementById('cell4.' + i).style.cssFloat = "left";
+			document.getElementById('cell4.' + i).style.border = "3px solid black";
+			document.getElementById('cell4.' + i).style.margin = "0px auto";
+		}
+	}
+}
+	/*
+	function assignrndPosFive()	{
+		var rndFive = Math.random()*625;
+		if	(rndFive<25)	{
 			document.getElementById('cell1').style.backgroundColor = q;
-			document.getElementById('cell1').addEventListener("click", thingy, true); 
+			document.getElementById('cell1').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
 			document.getElementById('cell4').style.backgroundColor = p;
@@ -39,11 +63,20 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=16 && rnd<32)	{
+		if (rndFive>=25 && rndFive<50)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = q;
-			document.getElementById('cell2').addEventListener("click", thingy, true);
+			document.getElementById('cell2').addEventListener("click", changeToSix, true);
   		    document.getElementById('cell3').style.backgroundColor = p;
 			document.getElementById('cell4').style.backgroundColor = p;
 			document.getElementById('cell5').style.backgroundColor = p;
@@ -58,12 +91,21 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=32 && rnd<48)	{
+		if (rndFive>=50 && rndFive<75)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = q;
-			document.getElementById('cell3').addEventListener("click", thingy, true); 
+			document.getElementById('cell3').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell4').style.backgroundColor = p;
 			document.getElementById('cell5').style.backgroundColor = p;
    			document.getElementById('cell6').style.backgroundColor = p;
@@ -77,13 +119,22 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=48 && rnd<64)	{
+		if (rndFive>=75 && rndFive<100)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
 			document.getElementById('cell4').style.backgroundColor = q;
-			document.getElementById('cell4').addEventListener("click", thingy, true); 
+			document.getElementById('cell4').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell5').style.backgroundColor = p;
    			document.getElementById('cell6').style.backgroundColor = p;
 			document.getElementById('cell7').style.backgroundColor = p;
@@ -96,14 +147,23 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=64 && rnd<80)	{
+		if (rndFive>=100 && rndFive<125)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
 			document.getElementById('cell4').style.backgroundColor = p;
 			document.getElementById('cell5').style.backgroundColor = q;
-			document.getElementById('cell5').addEventListener("click", thingy, true);
+			document.getElementById('cell5').addEventListener("click", changeToSix, true);
    			document.getElementById('cell6').style.backgroundColor = p;
 			document.getElementById('cell7').style.backgroundColor = p;
 			document.getElementById('cell8').style.backgroundColor = p;
@@ -115,15 +175,24 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=80 && rnd<96)	{
+		if (rndFive>=125 && rndFive<150)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
 			document.getElementById('cell4').style.backgroundColor = p;
 			document.getElementById('cell5').style.backgroundColor = p;
    			document.getElementById('cell6').style.backgroundColor = q;
-			document.getElementById('cell6').addEventListener("click", thingy, true);
+			document.getElementById('cell6').addEventListener("click", changeToSix, true);
 			document.getElementById('cell7').style.backgroundColor = p;
 			document.getElementById('cell8').style.backgroundColor = p;
     		document.getElementById('cell9').style.backgroundColor = p;
@@ -134,8 +203,17 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=96 && rnd<112)	{
+		if (rndFive>=150 && rndFive<175)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -143,7 +221,7 @@ function assignRndPos()	{
 			document.getElementById('cell5').style.backgroundColor = p;
    			document.getElementById('cell6').style.backgroundColor = p;
 			document.getElementById('cell7').style.backgroundColor = q;
-			document.getElementById('cell7').addEventListener("click", thingy, true); 
+			document.getElementById('cell7').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell8').style.backgroundColor = p;
     		document.getElementById('cell9').style.backgroundColor = p;
 			document.getElementById('cell10').style.backgroundColor = p;
@@ -153,8 +231,17 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=112 && rnd<128)	{
+		if (rndFive>=175 && rndFive<200)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -163,7 +250,7 @@ function assignRndPos()	{
    			document.getElementById('cell6').style.backgroundColor = p;
 			document.getElementById('cell7').style.backgroundColor = p;
 			document.getElementById('cell8').style.backgroundColor = q;
-			document.getElementById('cell8').addEventListener("click", thingy, true); 
+			document.getElementById('cell8').addEventListener("click", changeToSix, true); 
     		document.getElementById('cell9').style.backgroundColor = p;
 			document.getElementById('cell10').style.backgroundColor = p;
 			document.getElementById('cell11').style.backgroundColor = p;
@@ -172,8 +259,17 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=128 && rnd<144)	{
+		if (rndFive>=200 && rndFive<225)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -183,7 +279,7 @@ function assignRndPos()	{
 			document.getElementById('cell7').style.backgroundColor = p;
 			document.getElementById('cell8').style.backgroundColor = p;
     		document.getElementById('cell9').style.backgroundColor = q;
-			document.getElementById('cell9').addEventListener("click", thingy, true); 
+			document.getElementById('cell9').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell10').style.backgroundColor = p;
 			document.getElementById('cell11').style.backgroundColor = p;
     		document.getElementById('cell12').style.backgroundColor = p;
@@ -191,8 +287,17 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=144 && rnd<160)		{
+		if (rndFive>=225 && rndFive<250)		{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -203,15 +308,24 @@ function assignRndPos()	{
 			document.getElementById('cell8').style.backgroundColor = p;
     		document.getElementById('cell9').style.backgroundColor = p;
 			document.getElementById('cell10').style.backgroundColor = q;
-			document.getElementById('cell10').addEventListener("click", thingy, true); 
+			document.getElementById('cell10').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell11').style.backgroundColor = p;
     		document.getElementById('cell12').style.backgroundColor = p;
 			document.getElementById('cell13').style.backgroundColor = p;
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=160 && rnd<176)	{
+		if (rndFive>=250 && rndFive<275)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -223,14 +337,23 @@ function assignRndPos()	{
     		document.getElementById('cell9').style.backgroundColor = p;
 			document.getElementById('cell10').style.backgroundColor = p;
 			document.getElementById('cell11').style.backgroundColor = q;
-			document.getElementById('cell11').addEventListener("click", thingy, true); 
+			document.getElementById('cell11').addEventListener("click", changeToSix, true); 
     		document.getElementById('cell12').style.backgroundColor = p;
 			document.getElementById('cell13').style.backgroundColor = p;
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=176 && rnd<192)	{
+		if (rndFive>=275 && rndFive<300)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -243,13 +366,22 @@ function assignRndPos()	{
 			document.getElementById('cell10').style.backgroundColor = p;
 			document.getElementById('cell11').style.backgroundColor = p;
     		document.getElementById('cell12').style.backgroundColor = q;
-			document.getElementById('cell12').addEventListener("click", thingy, true); 
+			document.getElementById('cell12').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell13').style.backgroundColor = p;
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=192 && rnd<208)	{
+		if (rndFive>=300 && rndFive<325)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -263,12 +395,21 @@ function assignRndPos()	{
 			document.getElementById('cell11').style.backgroundColor = p;
     		document.getElementById('cell12').style.backgroundColor = p;
 			document.getElementById('cell13').style.backgroundColor = q;
-			document.getElementById('cell13').addEventListener("click", thingy, true); 
+			document.getElementById('cell13').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=208 && rnd<224)	{
+		if (rndFive>=325 && rndFive<350)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -283,11 +424,20 @@ function assignRndPos()	{
     		document.getElementById('cell12').style.backgroundColor = p;
 			document.getElementById('cell13').style.backgroundColor = p;
 			document.getElementById('cell14').style.backgroundColor = q;
-			document.getElementById('cell14').addEventListener("click", thingy, true); 
+			document.getElementById('cell14').addEventListener("click", changeToSix, true); 
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=224 && rnd<240)	{
+		if (rndFive>=350 && rndFive<375)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -303,10 +453,19 @@ function assignRndPos()	{
 			document.getElementById('cell13').style.backgroundColor = p;
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = q;
-			document.getElementById('cell15').addEventListener("click", thingy, true); 
+			document.getElementById('cell15').addEventListener("click", changeToSix, true); 
 			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
 		}
-		if (rnd>=240 && rnd<256)	{
+		if (rndFive>=375 && rndFive<400)	{
 			document.getElementById('cell1').style.backgroundColor = p;
 			document.getElementById('cell2').style.backgroundColor = p;
   		    document.getElementById('cell3').style.backgroundColor = p;
@@ -323,10 +482,271 @@ function assignRndPos()	{
 			document.getElementById('cell14').style.backgroundColor = p;
     		document.getElementById('cell15').style.backgroundColor = p;
 			document.getElementById('cell16').style.backgroundColor = q;
-			document.getElementById('cell16').addEventListener("click", thingy, true); 
+			document.getElementById('cell16').addEventListener("click", changeToSix, true);
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=400 && rndFive<425)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = q;
+			document.getElementById('cell17').addEventListener("click", changeToSix, true);
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=425 && rndFive<450)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = q;
+			document.getElementById('cell18').addEventListener("click", changeToSix, true);
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=450 && rndFive<475)		{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = q;
+			document.getElementById('cell19').addEventListener("click", changeToSix, true);
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=475 && rndFive<500)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = q;
+			document.getElementById('cell20').addEventListener("click", changeToSix, true);
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;		
+		}
+		if (rndFive>=500 && rndFive<525)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = q;
+			document.getElementById('cell21').addEventListener("click", changeToSix, true);
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=525 && rndFive<550)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = q;
+			document.getElementById('cell22').addEventListener("click", changeToSix, true);
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=550 && rndFive<575)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = q;
+			document.getElementById('cell23').addEventListener("click", changeToSix, true);
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=575 && rndFive<600)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = q;
+			document.getElementById('cell24').addEventListener("click", changeToSix, true);
+			document.getElementById('cell25').style.backgroundColor = p;
+		}
+		if (rndFive>=600 && rndFive<625)	{
+			document.getElementById('cell1').style.backgroundColor = p;
+			document.getElementById('cell2').style.backgroundColor = p;
+  		    document.getElementById('cell3').style.backgroundColor = p;
+			document.getElementById('cell4').style.backgroundColor = p;
+			document.getElementById('cell5').style.backgroundColor = p;
+   			document.getElementById('cell6').style.backgroundColor = p;
+			document.getElementById('cell7').style.backgroundColor = p;
+			document.getElementById('cell8').style.backgroundColor = p;
+    		document.getElementById('cell9').style.backgroundColor = p;
+			document.getElementById('cell10').style.backgroundColor = p;
+			document.getElementById('cell11').style.backgroundColor = p;
+    		document.getElementById('cell12').style.backgroundColor = p;
+			document.getElementById('cell13').style.backgroundColor = p;
+			document.getElementById('cell14').style.backgroundColor = p;
+    		document.getElementById('cell15').style.backgroundColor = p;
+			document.getElementById('cell16').style.backgroundColor = p;
+			document.getElementById('cell17').style.backgroundColor = p;
+			document.getElementById('cell18').style.backgroundColor = p;
+    		document.getElementById('cell19').style.backgroundColor = p;
+			document.getElementById('cell20').style.backgroundColor = p;
+			document.getElementById('cell21').style.backgroundColor = p;
+    		document.getElementById('cell22').style.backgroundColor = p;
+			document.getElementById('cell23').style.backgroundColor = p;
+    		document.getElementById('cell24').style.backgroundColor = p;
+			document.getElementById('cell25').style.backgroundColor = q;
+			document.getElementById('cell25').addEventListener("click", changeToSix, true);
 		}
 	}
-	
+	*/
 function beginGame()	{
 	"use strict";
 	//	HIDE FRONT PAGE ELEMENTS //
@@ -334,77 +754,30 @@ function beginGame()	{
 	document.getElementById('animation').style.visibility = "hidden";
 	document.getElementById('animation2').style.visibility = "hidden";
 	document.getElementById('text').style.visibility = "hidden";
-	document.getElementById('wrapper').style.display = "block";
+	document.getElementById('four').style.display = "block";
 	
 	// ASSIGN A RANDOM COLOR POSITION //
 	
-	assignRndPos();
+	assignRndPosFour();
 }
 
-// win function //
+// TRANSFER FUNCTIONS //
 
-function thingy() {
-	alert("You issssssssss the champion!!");
+function changeToFive() {
+	"use strict";
 	location.reload();
 }
+/*
+function changeToSix()	{
+	document.getElementById('five').style.display = "none";
+}
+
+
+*/
+
+
 
 /*
-function appendChild()	{
-	var btn1 = document.createElement('button');
-	var btn2 = document.createElement('button');
-	var btn3 = document.createElement('button');
-	var btn4 = document.createElement('button');
-	var btn5 = document.createElement('button');
-	var btn6 = document.createElement('button');
-	var btn7 = document.createElement('button');
-	var btn8 = document.createElement('button');
-	var btn9 = document.createElement('button');
-	btn1.setAttribute("id", "btn1");
-	btn2.setAttribute("id", "btn2");
-	btn3.setAttribute("id", "btn3");
-	btn4.setAttribute("id", "btn4");
-	btn5.setAttribute("id", "btn5");
-	btn6.setAttribute("id", "btn6");
-	btn7.setAttribute("id", "btn7");
-	btn8.setAttribute("id", "btn8");
-	btn9.setAttribute("id", "btn9");
-}
-document.getElementById('container').style.display = "block";
-	document.getElementById('button1').appendChild(btn1);
-	document.getElementById('button1').appendChild(btn2);
-	document.getElementById('button1').appendChild(btn3);
-	document.getElementById('button2').appendChild(btn4);
-	document.getElementById('button2').appendChild(btn5);
-	document.getElementById('button2').appendChild(btn6);
-	document.getElementById('button3').appendChild(btn7);
-	document.getElementById('button3').appendChild(btn8);
-	document.getElementById('button3').appendChild(btn9);
-
-
-
-    function genBtns(v){ 
-      var e = document.body;
-      for(var level = 0; level < v; level++){ 
-        var row = document.createElement("button"); 
-        row.className = "row";
-        for(var x = 1; x <= v; x++){ 
-            var cell = document.createElement("button"); 
-            cell.className = "gridsquare"; 
-            cell.innerText = (level * v) + x;
-            row.appendChild(cell); 
-        } 
-        e.appendChild(row); 
-      } 
-      document.getElementById("code").innerText = e.innerHTML;
-
-    }
-}
-
-
-
-
-
-
 
 thoughts: assign random color to grid of buttons
 
