@@ -90,9 +90,10 @@ I will be grading the final product according to the included rubric.
 Thank you for reading all of this. Now that you have your own project on GitHub, you need to replace all of this file with your own information. Delete everything from this line up!
 
 # Put your app name here!
+SuperHardProject
 
 ## Description
-Describe your app here!
+ Our app is a random color grid cicker where you have to find the color that is different. 
 
 ## FAQs
 
@@ -122,8 +123,8 @@ Insert answer here.
    * + to indicate something added and a...
    * - to indicate something removed, just be careful with your markdown syntax!
 
-### Version 1.0
-This is our initial release. We hope you enjoy it!
+### Version 1.1
+working on improvements and bug fixes
 
 ## Credits
 * Joe Schmoe
